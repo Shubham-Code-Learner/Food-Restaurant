@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2 ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2 ease-in-out;
+}
+/* Navigation */
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: white;
+    padding: 15px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.bar_icon{
+    font-size: 32px;
+}
+/* Hero Section */
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero_image img{
+    border-radius: 100%;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    background-color:green;
+    color: white;
+    padding: 5px 10px;
+    align-self: flex-start;
+}
+.hero_content h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.explore_btn{
+    background-color: rgb(255, 110, 20);
+    align-self: flex-start;
+}
+
+
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.10);
+}
+.features{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.feature{
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    transition: 0.2 ease-in-out;
+}
+.feature img{
+    height: 70px;
+}
+
+.divider{
+    border:1px solid rgb(216, 216, 216);
+    margin: 20px 0;
+}
+
+/* Menu Section */
+.menu{
+    display: flex;
+    flex-direction:column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+.menu .tag{
+    align-self: center;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "I1 I1 I2 I2 I3 I4 I5 I6 I7 I7";
+}
+.iteam1{
+    grid-area: I1;
+}
+.iteam2{
+    grid-area: I2;
+}
+.iteam3{
+    grid-area: I3;
+}
+.iteam4{
+    grid-area: I4;
+}
+.iteam5{
+    grid-area: I5;
+}
+.iteam6{
+    grid-area: I6;
+}
+.iteam7{
+    grid-area: I7;
+}
+
+@media(max-width:786px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: flex;
+        justify-content: center;
+    }
+    .hero_image{
+        width: 90%;
+    }
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero_content h1{
+        font-size: 32px;
+    }
+}
